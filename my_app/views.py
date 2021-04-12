@@ -33,7 +33,12 @@ def new_search(request):
     for post in post_listings:
         post_title = post.find(class_='result-title').text
         post_url = post.find('a').get('href')
-        post_price = post.find(class_='result-price').text\
+
+        post_price = post.find(class_='result-price')
+        if post_price is None:
+            post_price = 'no money mf'
+        else:
+            post_price = post_price.text
 
         if post.find(class_='result-image').get('data-ids'):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
