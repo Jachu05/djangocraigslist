@@ -7,3 +7,20 @@
     height: 250px; /* Your height here */
     overflow: hidden;
 }
+
+
+.form-control::-webkit-input-placeholder {
+  color: black;
+}
+.form-control:-moz-placeholder {
+  color: black;
+}
+.form-control::-moz-placeholder {
+  color: black;
+}
+.form-control::placeholder {
+  color: black;
+}
+.form-control:-ms-input-placeholder {
+  color: black;
+}
