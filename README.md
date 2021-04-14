@@ -1,6 +1,6 @@
 # djangocraigslist
 
-Welcome :)
+Welcome!
 Just a simple wrapper on popular based on well known craigslist. Made just for learining purposes :).
 
 Should be also accessible from:
