@@ -1,14 +1,20 @@
 .card {
-    height: 400px; /* Your height here */
+    height: 400px;
     overflow: hidden;
 }
 
 .card-image {
-    height: 250px; /* Your height here */
+    height: 250px;
     overflow: hidden;
 }
 
+.card-content {
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 input::placeholder {
-  color: black;
-  font-style: italic;
+    color: black;
+    font-style: italic;
 }
