@@ -98,6 +98,9 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
+# heroku
+staticfiles/
+
 # Environments
 .env
 .venv
