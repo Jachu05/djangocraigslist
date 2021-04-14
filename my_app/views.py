@@ -27,7 +27,7 @@ def new_search(request):
 
     soup = BeautifulSoup(response.text, features='html.parser')
 
-    post_listings = soup.find_all('li',  {'class': 'result-row'})
+    post_listings = soup.find_all('li', {'class': 'result-row'})
 
     final_postings = []
     for post in post_listings:
@@ -61,5 +61,5 @@ if __name__ == '__main__':
 
     soup = BeautifulSoup(response.text, features='html.parser')
 
-    post_listings = soup.find_all('li',  {'class': 'result-row'})
+    post_listings = soup.find_all('li', {'class': 'result-row'})
     post = post_listings[1].find(class_='result-image')
